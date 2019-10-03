@@ -32,7 +32,8 @@ module.exports = async function Mailer(mail) {
     const USER_ADMIN_NAME = process.env.USER_ADMIN_NAME;
     const USER_ADMIN_EMAIL = process.env.USER_ADMIN_EMAIL;
 
-    const RECEIVER_EMAILS = 'admin@digitalcreation.io, jared.f.church@gmail.com, ramiljoaquin@gmail.com, rodtsan.dev3@gmail.com';
+    // const RECEIVER_EMAILS = 'admin@digitalcreation.io, jared.f.church@gmail.com, ramiljoaquin@gmail.com, rodtsan.dev3@gmail.com';
+    const RECEIVER_EMAILS = proccess.env.RECEIVER_EMAILS;
     const SUBJECT = 'Digital Creation - Contact Us';
 
     // send mail with defined transport object
